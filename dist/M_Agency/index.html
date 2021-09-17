@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>M-Agency</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">  
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header"> 
+    
+   <!--    <video autoplay loop muted poster="images/header_bg.jpg" class="header__bgvideo" id="header__bgvideo">
+        <source src="video/Stars10.mp4" type="video/mp4"></source>
+      </video> -->
+    
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <button class="logo" type="submit">
+            <svg width="51" height="53" viewBox="0 0 51 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.4902 8.40625L25.0644 26.9688L31.6035 8.40625H38.5293V34H33.2383V27.0039L33.7656 14.9277L26.8574 34H23.2363L16.3457 14.9453L16.873 27.0039V34H11.5996V8.40625H18.4902Z" fill="#10B1CB"/>
+              <rect width="47.59" height="3.6" transform="matrix(0.970419 -0.241425 0.244196 0.969726 0.981934 25.9717)" fill="#0F0F0F"/>
+              <path d="M8.75975 49.7788C8.68683 49.633 8.62759 49.3732 8.58201 48.9995C7.99412 49.6102 7.2923 49.9155 6.47654 49.9155C5.74738 49.9155 5.14809 49.7104 4.67869 49.3003C4.21385 48.8856 3.98143 48.3615 3.98143 47.728C3.98143 46.9578 4.27309 46.3608 4.85643 45.937C5.44432 45.5086 6.26919 45.2944 7.33104 45.2944H8.5615V44.7134C8.5615 44.2713 8.42934 43.9204 8.16502 43.6606C7.9007 43.3963 7.51105 43.2642 6.99607 43.2642C6.5449 43.2642 6.16665 43.3781 5.86131 43.606C5.55597 43.8338 5.4033 44.1095 5.4033 44.4331H4.13182C4.13182 44.064 4.2617 43.7085 4.52147 43.3667C4.78579 43.0203 5.14126 42.7469 5.58787 42.5464C6.03904 42.3459 6.53351 42.2456 7.07127 42.2456C7.92348 42.2456 8.59113 42.4598 9.0742 42.8882C9.55727 43.312 9.80792 43.8976 9.82615 44.645V48.0493C9.82615 48.7284 9.91274 49.2684 10.0859 49.6694V49.7788H8.75975ZM6.66111 48.8149C7.0576 48.8149 7.43357 48.7124 7.78904 48.5073C8.14451 48.3022 8.402 48.0356 8.5615 47.7075V46.1899H7.57029C6.02081 46.1899 5.24607 46.6434 5.24607 47.5503C5.24607 47.9468 5.37824 48.2567 5.64256 48.48C5.90688 48.7033 6.2464 48.8149 6.66111 48.8149ZM11.5078 46.019C11.5078 44.866 11.7744 43.95 12.3076 43.271C12.8408 42.5874 13.5472 42.2456 14.4267 42.2456C15.3291 42.2456 16.0332 42.5646 16.539 43.2026L16.6006 42.3823H17.7558V49.6011C17.7558 50.5581 17.471 51.3123 16.9013 51.8638C16.3362 52.4152 15.5752 52.6909 14.6181 52.6909C14.0849 52.6909 13.5631 52.577 13.0527 52.3491C12.5423 52.1213 12.1527 51.8091 11.8838 51.4126L12.54 50.6538C13.0823 51.3237 13.7454 51.6587 14.5293 51.6587C15.1445 51.6587 15.623 51.4855 15.9648 51.1392C16.3112 50.7928 16.4844 50.3052 16.4844 49.6763V49.0405C15.9785 49.6239 15.2881 49.9155 14.4131 49.9155C13.5472 49.9155 12.8454 49.5669 12.3076 48.8696C11.7744 48.1724 11.5078 47.2222 11.5078 46.019ZM12.7793 46.1626C12.7793 46.9966 12.9502 47.6528 13.292 48.1313C13.6338 48.6053 14.1123 48.8423 14.7275 48.8423C15.525 48.8423 16.1107 48.48 16.4844 47.7554V44.3784C16.097 43.672 15.5159 43.3188 14.7412 43.3188C14.126 43.3188 13.6452 43.5581 13.2988 44.0366C12.9525 44.5151 12.7793 45.2238 12.7793 46.1626ZM22.7392 49.9155C21.7366 49.9155 20.9209 49.5874 20.292 48.9312C19.6631 48.2703 19.3486 47.3885 19.3486 46.2856V46.0532C19.3486 45.3195 19.4876 44.6655 19.7656 44.0913C20.0482 43.5125 20.4401 43.0614 20.9414 42.7378C21.4472 42.4097 21.9941 42.2456 22.582 42.2456C23.5436 42.2456 24.291 42.5623 24.8242 43.1958C25.3574 43.8293 25.624 44.7362 25.624 45.9165V46.4429H20.6133C20.6315 47.172 20.8434 47.7622 21.249 48.2134C21.6592 48.66 22.1787 48.8833 22.8076 48.8833C23.2542 48.8833 23.6325 48.7922 23.9424 48.6099C24.2523 48.4276 24.5234 48.186 24.7558 47.8853L25.5283 48.4868C24.9085 49.4393 23.9788 49.9155 22.7392 49.9155ZM22.582 43.2847C22.0716 43.2847 21.6432 43.4715 21.2969 43.8452C20.9505 44.2144 20.7363 44.7339 20.6543 45.4038H24.3594V45.3081C24.3229 44.6655 24.1497 44.1688 23.8398 43.8179C23.5299 43.4624 23.1107 43.2847 22.582 43.2847ZM28.29 42.3823L28.331 43.312C28.8961 42.6011 29.6344 42.2456 30.5459 42.2456C32.109 42.2456 32.8974 43.1274 32.9111 44.8911V49.7788H31.6465V44.8843C31.6419 44.3511 31.5189 43.9569 31.2773 43.7017C31.0403 43.4465 30.6689 43.3188 30.1631 43.3188C29.7529 43.3188 29.3929 43.4282 29.083 43.647C28.7731 43.8657 28.5316 44.1528 28.3584 44.5083V49.7788H27.0937V42.3823H28.29ZM37.7851 48.8833C38.2363 48.8833 38.6305 48.7466 38.9678 48.4731C39.305 48.1997 39.4918 47.8579 39.5283 47.4478H40.7246C40.7018 47.8716 40.556 48.2749 40.2871 48.6577C40.0182 49.0405 39.6582 49.3459 39.207 49.5737C38.7604 49.8016 38.2864 49.9155 37.7851 49.9155C36.778 49.9155 35.9759 49.5806 35.3789 48.9106C34.7864 48.2362 34.4902 47.3156 34.4902 46.1489V45.937C34.4902 45.217 34.6224 44.5767 34.8867 44.0161C35.151 43.4556 35.5293 43.0203 36.0215 42.7104C36.5182 42.4006 37.1038 42.2456 37.7783 42.2456C38.6077 42.2456 39.2959 42.494 39.8428 42.9907C40.3942 43.4875 40.6881 44.1323 40.7246 44.9253H39.5283C39.4918 44.4468 39.3096 44.0549 38.9814 43.7495C38.6579 43.4396 38.2568 43.2847 37.7783 43.2847C37.1357 43.2847 36.6367 43.5171 36.2812 43.9819C35.9303 44.4422 35.7549 45.1099 35.7549 45.9849V46.2241C35.7549 47.0763 35.9303 47.7326 36.2812 48.1929C36.6321 48.6532 37.1334 48.8833 37.7851 48.8833ZM44.5664 47.9263L46.289 42.3823H47.6426L44.6689 50.9204C44.2086 52.1509 43.4772 52.7661 42.4746 52.7661L42.2353 52.7456L41.7637 52.6567V51.6313L42.1054 51.6587C42.5338 51.6587 42.8665 51.5721 43.1035 51.3989C43.345 51.2257 43.5433 50.909 43.6982 50.4487L43.9785 49.6968L41.3398 42.3823H42.7207L44.5664 47.9263Z" fill="#10B1CB"/>
+              </svg>
+          </button>          
+          <nav class="menu">
+            <button class="menu__btn" type="submit">
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#" >Услуги</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" >Портфолио</a></li>          
+              <li class="menu__item"><a class="menu__link" href="mailto:mm.agency@gmail.com">mm.agency@gmail.com</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__content">
+          <h2 class="header__title">
+            Maxi media agency            
+          </h2>          
+            <p class="header__text">
+              Создаем качественные сайты для вашего бизнеса
+            </p>           
+          <button class="btn__circle" type="submit">
+            <svg width="400" height="100" viewBox="-10 -10 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+              <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+              <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+              <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+              </g>
+            </svg>
+            </button>
+        </div>        
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="proffer">
+      <div class="container">
+        <!-- <img class="proffer__img" src="images/line.svg" alt=""> -->
+        <div class="proffer__img">
+          <svg width="1344" height="253" viewBox="0 0 1344 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="line-animation0" d="M1335.65 8V245H8.34784" stroke="#10B1CB" stroke-width="3"/>
+            <ellipse cx="1335.65" cy="8" rx="8.34783" ry="8" fill="#10B1CB"/>
+            <ellipse cx="8.34783" cy="245" rx="8.34783" ry="8" fill="#10B1CB"/>
+            </svg>
+        </div>
+        <h2 class="title proffer__title">Что мы предлагаем</h2>
+        <div class="proffer__inner">
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Интернет магазин </h4>
+              <p class="proffer__item-text">Создаем сайт вашего интерет магазина легким и быстрым для оформления заказа. </p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+              
+            </div>                     
+          </a>
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Корпоративный сайт </h4>
+              <p class="proffer__item-text">Корпоративный сайт любой сложности и масштаба.</p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+            </div>                     
+          </a>
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Landing Page </h4>
+              <p class="proffer__item-text">Создаем продающий лендинг с легко запоминающимся дизайном.</p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+            </div>                     
+          </a>
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Бизнес сайт</h4>
+              <p class="proffer__item-text">Помогаем вашему бизнесу привлечь большее количество клиентов.</p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+            </div>                     
+          </a>
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Сайт визитка</h4>
+              <p class="proffer__item-text">Сделаем ваш бренд уникальным среди конкурентов.</p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+            </div>                     
+          </a>
+          <a class="proffer__item" href="#">
+            <div class="proffer__item-info">
+              <h4 class="proffer__item-title">Редизайн сайта</h4>
+              <p class="proffer__item-text">Обновим имеющийся сайт добавляя новые идеи и креатив.</p>
+              <div class="proffer__item-description">
+                <p class="proffer__item-descr">Подробнее</p>
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <path d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289L18.3431 0.928932C17.9526 0.538408 17.3195 0.538408 16.9289 0.928932C16.5384 1.31946 16.5384 1.95262 16.9289 2.34315L22.5858 8L16.9289 13.6569C16.5384 14.0474 16.5384 14.6805 16.9289 15.0711C17.3195 15.4616 17.9526 15.4616 18.3431 15.0711L24.7071 8.70711ZM0 9H24V7H0L0 9Z" fill="#10B1CB"/>
+                  </g>
+                </svg>
+              </div>
+            </div>                     
+          </a>          
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <!-- <div class="container"> -->
+        <div class="about__inner">
+          <h2 class="title about__title">Почему мы?</h2>
+          <div class="about__img">
+            <svg width="1600" height="1015" viewBox="-370 0 1600 1015" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="line-animation1" d="M444.5 507.5C444.5 663.183 300.177 789.5 122 789.5C-56.1768 789.5 -200.5 663.183 -200.5 507.5C-200.5 351.817 -56.1768 225.5 122 225.5C300.177 225.5 444.5 351.817 444.5 507.5Z" stroke="#10B1CB"/>
+              <path class="line-animation2" d="M314.5 507.5C314.5 600.222 228.381 675.5 122 675.5C15.6193 675.5 -70.5 600.222 -70.5 507.5C-70.5 414.778 15.6193 339.5 122 339.5C228.381 339.5 314.5 414.778 314.5 507.5Z" stroke="#10B1CB"/>
+              <g filter="url(#filter0_f)">
+               <ellipse cx="146" cy="507.5" rx="159" ry="157.5" fill="#10B1CB"/>
+              </g>
+               <path class="line-animation3" d="M561.5 507.5C561.5 710.107 364.594 874.5 121.5 874.5C-121.594 874.5 -318.5 710.107 -318.5 507.5C-318.5 304.893 -121.594 140.5 121.5 140.5C364.594 140.5 561.5 304.893 561.5 507.5Z" stroke="#10B1CB"/>
+              <g>
+              <circle cx="418.5" cy="236.5" r="17.5" fill="#10B1CB"/> 
+              <path d="M419 232V237M419 242V237M419 237H424H414" stroke="#DDDFE8"/>
+              <text x="457" y="242" fill="#DADDEC">Прозрачные условия работы</text>
+              </g>
+              <g>
+              <circle  cx="521.5" cy="356.5" r="17.5" fill="#10B1CB"/>
+              <path  d="M522 352V357M522 362V357M522 357H527H517" stroke="#DDDFE8"/>
+              <text x="560" y="362" fill="#DADDEC">Гибкая система оплаты</text>
+              </g>
+              <g>
+              <circle cx="565.5" cy="507.5" r="17.5" fill="#10B1CB"/>
+              <path d="M566 503V508M566 513V508M566 508H571H561" stroke="#DDDFE8"/>
+              <text x="590" y="515" fill="#DADDEC">Отчетность по каждому этапу работы</text>
+              </g>
+              <g>
+              <circle cx="521.5" cy="658.5" r="17.5" fill="#10B1CB"/>
+              <path d="M522 654V659M522 664V659M522 659H527H517" stroke="#DDDFE8"/>
+              <text x="560" y="668" fill="#DADDEC">Консультации после запуска</text>
+              </g>
+              <g>
+              <circle cx="418.5" cy="779.5" r="17.5" fill="#10B1CB"/>
+              <path d="M419 775V780M419 785V780M419 780H424H414" stroke="#DDDFE8"/>
+              <text x="460" y="787" fill="#DADDEC">Скидки постоянным клиентам</text>
+              </g>
+              <defs>
+               <!-- <filter id="filter0_f" x="-363" y="0" width="1018" height="1015" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="175" result="effect1_foregroundBlur"/>
+              </filter>     -->
+              </defs>
+            </svg>
+            <!-- <div class="about__gradient"> -->
+              <img class="about__gradient-img" src="images/about-gradient.svg" alt="">
+            <!-- </div> -->
+          </div>
+          
+        </div>
+      <!-- </div> -->
+    </section>
+    <section class="services">
+      <div class="container">
+        <!-- <img class="services__img" src="images/line2.svg" alt=""> -->
+        <div class="services__line">
+          <svg width="1334" height="4045" viewBox="0 0 1334 4045" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="line-animation4" d="M1087 3.5V520.5H7.5V1224.5H1322.5L1331.5 1880.5H7.5V2605.5H1026V3272.5H7.5V4036 4037H1275" stroke="#10B1CB" stroke-width="3"/>
+            <circle  cx="1087" cy="8" r="8" fill="#10B1CB"/>
+            <circle  cx="8" cy="4037" r="8" fill="#10B1CB"/>
+            <circle  cx="1273" cy="4037" r="8" fill="#10B1CB"/>
+            <circle  cx="1069" cy="1881" r="8" fill="#10B1CB"/>
+            <circle  cx="1026" cy="2807" r="8" fill="#10B1CB"/>
+            <circle  cx="8" cy="1026" r="8" fill="#10B1CB"/>
+            <!-- <path d="M9 4037H1275" stroke="#10B1CB" stroke-width="3"/> -->
+            </svg>
+        </div>
+        <div class="services__inner">
+          <h3 class="services__inner-price">Стоимость от <span>1000$</span></h3>
+          <h2 class="title services__inner-title">Интернет магазин</h2>
+          <p class="services__text">Создаем сайт вашего интерет магазина легким и быстрым для оформления заказа. <br><br>           
+            Разработанные нами готовые решения позволят ускорить процесс создания интернет-магазина, 
+            благодаря чему значительно приблизится срок запуска и получение первой прибыли с продаж.</p>
+          <div class="services__buttons">
+            <button class="btn__circle" type="submit">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+        <div class="services__inner pt-1">
+          <h3 class="services__inner-price">Стоимость от <span>800$</span></h3>
+          <h2 class="title services__inner-title">Корпоративный сайт</h2>
+          <p class="services__text">Корпоративный сайт любой сложности  и масштаба. <br><br>
+            Хотите, чтобы ваш корпоративный сайт не просто существовал, а работал на полной мощности? Вызывал доверие партнеров 
+            и клиентов? Приносил прибыль компании? Мы знаем, как это сделать!  </p>
+          <div class="services__buttons">
+            <button class="btn__circle" type="submit">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+        <div class="services__inner">
+          <h3 class="services__inner-price">Стоимость от <span>900$</span></h3>
+          <h2 class="title services__inner-title">Landing Page</h2>
+          <p class="services__text">Создаем продающий лендинг с легко запоминающимся дизайном.<br><br>
+            Landing page - это одностраничная посадочная страница, задача которой, 
+            побудить пользователя совершить целевое действие. Мы поможем вам с этой 
+            задачей!</p>
+          <div class="services__buttons" type="submit">
+            <button class="btn__circle">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+        <div class="services__inner">
+          <h3 class="services__inner-price">Стоимость от <span>1500$</span></h3>
+          <h2 class="title services__inner-title">Бизнес сайт</h2>
+          <p class="services__text">Помогаем вашему бизнесу привлечь большее количество клиентов.<br><br>
+            Мы разработаем не просто сайт, а лицо вашего бренда в интернете.
+            Вы получите уникальный и эффективный веб-сайт. 
+            Доверьте это дело профессионалам, чтобы получить желаемый результат.</p>
+          <div class="services__buttons">
+            <button class="btn__circle" type="submit">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+        <div class="services__inner pt-1">
+          <h3 class="services__inner-price">Стоимость от <span>900$</span></h3>
+          <h2 class="title services__inner-title">Сайт визитка</h2>
+          <p class="services__text">Сделаем ваш бренд уникальным среди конкурентов.<br><br>
+            Мы разработаем готовое решение для Вашего бизнеса. 
+            Сайт визитка является успешным способом для взаимодействия с клиентом и 
+            аудиторией.</p>
+          <div class="services__buttons">
+            <button class="btn__circle" type="submit">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+        <div class="services__inner pt-1">
+          <h3 class="services__inner-price">Стоимость от <span>400$</span></h3>
+          <h2 class="title services__inner-title">Редизайн сайта</h2>
+          <p class="services__text">Обновим имеющийся сайт добавляя новые идеи и креатив.<br><br>
+            Данная услуга позволяет улучшить структуру, функционал и контент, 
+            с целью повышения качества юзабилити, а проще говоря, удобства пользования 
+            ресурсом. Освежим визуал для укрепления имиджа и поднятия лояльности клиента.</p>
+          <div class="services__buttons">
+            <button class="btn__circle" type="submit">
+              <svg width="360" height="100" viewBox="-10 -10 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <circle cx="37.5" cy="37.5" r="37" stroke="#10B1CB" stroke-opacity="0.2"/>
+                <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#10B1CB"/>
+                <text x="80" y="45" fill="#10B1CB">Обсудить проект</text>
+                </g>
+              </svg>
+              </button>
+              <a class="services__link" href="#">Смотреть портфолио</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__inner">          
+            <h2 class="title contacts__title">Хотите обсудить дизайн вашего сайта?</h2>            
+            <form class="contacts__form" action="/" method="POST">
+              <div class="contacts__form-group">
+                <input class="contacts__form-input" placeholder="ФИО" type="text">
+                <input class="contacts__form-input" placeholder="+ 7 (900) 000 00 00" type="tel">
+              </div>              
+              <div class="contacts__form-group">
+                <textarea class="contacts__form-textarea" name="message" placeholder="О проекте"></textarea>                
+             </div>              
+              <button class="btn__circle btn__circle-mb" type="submit">
+                <svg width="400" height="100" viewBox="-10 -10 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                  <circle cx="37.5" cy="37.5" r="37" stroke="#898C9A" stroke-opacity="0.2"/>
+                  <path class="line-animated" d="M35.3813 38.3536C35.5766 38.1583 35.5766 37.8417 35.3813 37.6464L32.1993 34.4645C32.0041 34.2692 31.6875 34.2692 31.4922 34.4645C31.297 34.6597 31.297 34.9763 31.4922 35.1716L34.3206 38L31.4922 40.8284C31.297 41.0237 31.297 41.3403 31.4922 41.5355C31.6875 41.7308 32.0041 41.7308 32.1993 41.5355L35.3813 38.3536ZM17 38.5H35.0278V37.5H17V38.5Z" fill="#898C9A"/>
+                  <text x="80" y="45" fill="#898C9A">Обсудить проект</text>
+                  </g>
+                </svg>
+                </button>
+            </form>
+            <p class="contacts__text">
+              Нажимая на кнопку, вы соглашаетесь с <a class="contacts__text-link" href="#">политикой защиты персональных данных</a>
+            </p>          
+          </div>          
+        </div>      
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="project__title">
+          <h2 class="title project__title--color">Наши проекты</h2>
+          <time class="project__pubdate" datetime="2020-12-21 19:21">
+            2019-2021
+          </time>
+        </div>
+        <div class="projects__inner">          
+          <div class="projects__box">
+            <h3 class="projects__text">Ceramics</h3>
+            <p class="projects__descr">
+              Проект для компании, которая продает керамические изделия ручной работы.
+              При изготовлении керамических изделий, как  используются различный виды лепки, 
+              например вытягивание на круге, вручную, жгутовой и пластовой методы. 
+              Все преимущества данной компании отразили в уникальном сайте.
+            </p>
+            <a class="projects__link" href="#">Подробнее</a>
+
+          </div>
+          <div class="projects__images">
+            <a class="projects__links" href="#">
+              <img class="projects__img" src="images/Ceramics.jpg" alt="Ceramics">
+            </a>            
+          </div>
+        </div>
+        <div class="projects__inner">          
+          <div class="projects__box">
+            <h3 class="projects__text">Rest Sofa</h3>
+            <p class="projects__descr">
+              Проект для компании, которая производит мебель под заказ. современная 
+              и практичная мебель выполнена из качественных материалов и прослужит много лет. 
+              Красивые и аккуратные кресла, столики – в каталоге нашего магазина Вы найдете много мебели, 
+              которая обеспечит комфортный отдых.
+            </p>
+            <a class="projects__link" href="#">Подробнее</a>
+
+          </div>
+          <div class="projects__images">
+            <a class="projects__links" href="#">
+              <img class="projects__img" src="images/Sofa.jpg" alt="Rest Sofa">
+            </a>            
+          </div>
+        </div>
+        <div class="projects__inner">          
+          <div class="projects__box">
+            <h3 class="projects__text">LuX</h3>
+            <p class="projects__descr">
+              Проект для компании, которая занимается дизайном интерьера ванных комнат 
+              и санузлов. Наши проекты основаны 
+              на реальных историях наших клиентов 
+              из жизни, которые мы готовы воплатить 
+              в реальность самые смелые идеи.
+            </p>
+            <a class="projects__link" href="#">Подробнее</a>
+
+          </div>
+          <div class="projects__images">
+            <a class="projects__links" href="#">
+              <img class="projects__img" src="images/Lux.jpg" alt="LuX">
+            </a>            
+          </div>
+        </div>
+        <div class="projects__inner">          
+          <div class="projects__box">
+            <h3 class="projects__text">Alexander Kim</h3>
+            <p class="projects__descr">
+              Проект крафтовый сайт - портфолио творческого человека. 
+              Человеку творческой профессий необходимо 
+              в первую очередь иметь отличное портфолио, которое показывает глубину мысли, 
+              разная направленность фантазии и любовь к деталям. Сайт визитка отлично справится с данной целью.
+            </p>
+            <a class="projects__link" href="#">Подробнее</a>
+
+          </div>
+          <div class="projects__images">
+            <a class="projects__links" href="#">
+              <img class="projects__img" src="images/AKim.jpg" alt="Alexander Kim">
+            </a>            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img class="footer__logo-img" src="images/footer-logo.svg" alt="Logo">
+      </div>
+      <ul class="footer__contakts">
+        <li class="footer__contakts-item">
+          <a class="footer__contakts-link" href="tel:+880000000"><img class="footer__contakts-img" src="images/phone.svg" alt="Phone">+8 800 000 00</a>
+        </li>
+        <li class="footer__contakts-item">
+          <a class="footer__contakts-link" href="mailto:mm.agency@gmail.com"><img class="footer__contakts-img" src="images/mail.svg" alt="Phone">mm.agency@gmail.com</a>
+        </li>
+        <li class="footer__contakts-item">
+          <a class="footer__contakts-link" href="#"><img class="footer__contakts-img" src="images/place.svg" alt="Place">г. Москва, ул Набережная 149  офис 5</a>
+        </li>
+      </ul>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"><img class="footer__social-img" src="images/facebook-icon.svg" alt="Facebook"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"><img class="footer__social-img" src="images/telegram-icon.svg" alt="Telegram"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#"><img class="footer__social-img" src="images/viber-icon.svg" alt="Viber"></a>
+        </li>
+      </ul>
+      <ul class="footer__privacy">
+        <li class="footer__privacy-item">
+          <a class="footer__privacy-link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer__privacy-item">
+          <a class="footer__privacy-link" href="#">Политика конфеденциальности</a>
+        </li>        
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

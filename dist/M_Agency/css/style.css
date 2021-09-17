@@ -1,0 +1,754 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    /* color: #ffffff;
+    font-family: 'Halvar-Breitschrift'; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px; */
+}
+a{
+    text-decoration: none;
+    color: inherit;    
+}
+button{    
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+}
+.btn__circle{
+    font-family: 'Halvar-Breitschrift'; 
+    font-style: italic; 
+    font-size: 18px;
+    line-height: 21px;
+    color: #10B1CB;
+    text-shadow: 0px 4px 20px rgba(46, 74, 223, 0.3); 
+}
+@font-face {
+    font-family: 'Halvar-Breitschrift';    
+    src: url('../fonts/HalvarBreit-Rg.woff2') format('woff2'),
+         url('../fonts/HalvarBreit-Rg.woff') format('woff');         
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Halvar Breitschrift';    
+    src: url('../fonts/HalvarBreit-Md.woff2') format('woff2'),
+         url('../fonts/HalvarBreit-Md.woff') format('woff');         
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+.container{
+    position: relative;
+    /* max-width: 1220px; */
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+ .title{
+    font-family: 'Halvar Breitschrift';   
+    font-weight: 500;
+    font-size: 48px;
+    font-style: italic;
+    line-height: 56px;    
+
+} 
+.pt-1{
+    padding-top: 60px;
+}
+
+/* .button{
+    
+} */
+/************************ Анимация svg **************************/
+
+.btn__circle circle,
+.btn__circle text{
+    transition: all 0.5s;
+    cursor: pointer;   
+    
+}
+.btn__circle g:hover circle{
+    stroke-opacity: 1;
+     r: 40px;
+     stroke-width: 3;
+    /*fill: #10B1CB; */
+}
+.btn__circle g:hover path{
+    stroke: deepskyblue;
+   stroke-width: 2;    
+    /* fill: red; */
+}
+.btn__circle g:hover text{
+    font-size: 26px;
+    fill: #10B1CB;
+    text-shadow: 0px 4px 20px rgba(46, 74, 223, 0.3);
+}
+
+.line-animation0{
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2000;
+    animation: animdash1 20s infinite 3s;
+}
+.line-animation1{
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 3000;
+    animation: animdash1 30s infinite 3s;
+}
+.line-animation2{
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 3000;
+    animation: animdash2 30s infinite 2s;
+}
+
+.line-animation3{
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 3000;
+    animation: animdash3 30s infinite 4s;
+}
+.line-animation4{
+    
+    stroke-dashoffset: 13000;
+    stroke-dasharray: 13000;
+    animation: animdash4 30s infinite 5s;
+}
+@keyframes animdash0{
+    to{        
+        stroke-dashoffset: 0; 
+    }
+   
+}
+@keyframes animdash1 {
+    to{        
+        stroke-dashoffset: 0; 
+    }
+   
+}
+@keyframes animdash2 {
+    to{        
+        stroke-dashoffset: 0; 
+    }
+   
+}
+@keyframes animdash3 {
+    to{        
+        stroke-dashoffset: 0; 
+    }
+   
+}
+@keyframes animdash4 {
+    to{        
+        stroke-dashoffset: 0; 
+    }
+   
+}
+.line-animated{
+    animation: anim 6s infinite 2s;
+}
+@keyframes anim {
+	from {
+		transform: translateX(0%);}
+
+	25%{
+	transform: translateX(10%);}
+		
+	/* 50% {
+		transform: translateX(0%);}
+		75% {
+			transform: translateX(-10%);}
+		
+	to {
+		transform: translateX(0%);
+	} */
+	}
+.about__inner circle,
+.about__inner text,
+.about__inner path{
+    transition: all 0.5s;
+    cursor: pointer;   
+    
+}
+.about__inner g:hover text{
+    font-size: 26px;
+    line-height: 28px;
+    fill: #10B1CB;
+
+}
+.about__inner g:hover circle{
+    r: 25px;
+    fill: #DADDEC; 
+}
+.about__inner g:hover path{    
+    stroke: #10B1CB;
+    stroke-width: 3; 
+}
+
+/********************** Конец анимации svg **************************/
+
+.header__bgvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;    
+  }  
+  
+ .header{
+     position: relative;
+     margin-bottom: 130px;
+     position: relative;
+    background-image: url(../images/header_bg.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+} 
+.header__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 30px;
+}
+
+.menu__list{
+    display: flex;
+}
+.menu__item{
+    margin-right: 60px;
+} 
+.menu__link{
+    position: relative;
+    /*text-transform: uppercase;*/
+    font-family: 'Halvar Breitschrift'; 
+    font-size: 18px;
+    font-style: italic;
+    line-height: 16px;
+    color: rgba(218,221,236, .8);
+    transition: all .5s;
+}
+.menu__link:hover{
+    color: #10B1CB;
+}
+.menu__link::before{
+    content: "";
+    position: absolute;
+    background-color: #10B1CB;
+    transition: all .5s;
+    width: 0;   
+    height: 2px;
+    bottom: -8px;
+    right: 0;
+    left: auto;
+}    
+.menu__link:hover::before{            
+    width: 100%;
+    right: auto;
+    left: 0;
+    
+}
+
+.header__content{
+    position: relative;
+    max-width: 600px;
+    margin-bottom: 22%;
+}
+.header__content::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 230px;
+    background-color: #787878;
+    z-index: 10;
+    left: -50px;
+    bottom: 20px;
+}
+.header__title{
+    font-family: 'Halvar Breitschrift';
+    font-weight: 500;
+    font-size: 48px;
+    font-style: italic;
+    line-height: 56px;
+    color: #DADDEC;
+    margin-bottom: 10px;
+}
+
+.header__text{
+    font-family: 'Halvar-Breitschrift';
+    font-size: 18px;
+    line-height: 21px;
+    font-style: italic;
+    color: rgba(218, 221, 236, 0.8);
+    margin-bottom: 30px;
+}
+
+
+/**************************************************************/
+.proffer{
+    position: relative;
+}
+.proffer__img{
+    position: absolute;
+    top: -300px;
+    right: 0;
+    z-index: -10;
+}
+.proffer__title{
+    margin-bottom: 60px;
+    color: #0F0F0F
+}
+
+.proffer__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    
+}
+.proffer__item{    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 33.333334444%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.proffer__item:hover{       
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);      
+    background-color: #10B1CB;
+}
+
+.proffer__item-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+   
+.proffer__item-title{    
+    font-family: 'Halvar-Breitschrift'; 
+    font-style: italic;    
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;    
+    color: #0F0F0F;
+    transition: all .3s;       
+}
+.proffer__item:hover .proffer__item-title{        
+    color: #DDDFE8;
+}
+.proffer__item:hover .proffer__item-text{        
+    color: #DDDFE8;
+}
+.proffer__item:hover .proffer__item-descr{        
+    color: #DDDFE8;
+}
+.proffer__item:hover .proffer__item-description g  path{        
+    fill: #DDDFE8;
+}
+.proffer__item-text{
+    margin-bottom: 35px;
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;    
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(15, 15, 15, 0.8);
+}
+.proffer__item-description{
+    display: flex;
+    justify-content: start;
+}
+.proffer__item-description svg{
+    padding-left: 8px; 
+}
+.proffer__item-descr{
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: #10B1CB;
+}
+
+/* .proffer__item-descr::after{
+    content: url('../images/link-arrow.svg');
+    padding-left: 8px;
+
+} */
+    
+
+
+/*****************************************/
+.about{
+    background-color: #000000;
+    z-index: -100;
+}
+.about__gradient-img{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    z-index: -50;
+}
+.about__inner{
+    position: relative;
+    /* background-color: #000; */
+    margin-bottom: 200px;
+    z-index: 10;
+}
+.about__title{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: #DADDEC;
+}
+.about__inner g text{    
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/******************************************************/  
+ .services{
+     position: relative;
+     margin-bottom: 150px;
+ }
+ .services__line{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    z-index: -100;
+ }
+ .services__img{
+     position: absolute;
+     top: 0;
+    text-align: center;
+    z-index: -100;
+ }
+ .services__inner{
+    width: 60%;
+    height: auto;
+    padding-left: 120px;
+    margin-bottom: 160px;
+ }
+ .services__inner-price{
+    margin-bottom: 15px;
+    font-family: 'Halvar Breitschrift';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0F0F0F;
+ }
+ .services__inner-price span{
+     color: #10B1CB;
+ }
+ .services__inner-title{
+    color: #0F0F0F;
+     width: 100%;
+     margin-bottom: 30px;
+ }
+ .services__text{
+     margin-bottom: 50px;
+    font-family: 'Halvar-Breitschrift';  
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(15, 15, 15, 0.8);
+ }
+ .services__buttons{
+     display: flex;
+     justify-content: space-between;
+ }
+ .services__link{
+    padding-top: 40px;
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;    
+    font-size: 18px;
+    line-height: 21px; 
+    color: rgba(16, 177, 203, 0.7);
+ }
+ .services__link:hover{
+    color: #10B1CB;
+ }
+/******************** contacts********************************/
+.contacts{
+    background-color: #000000;
+    margin-bottom: 155px;
+}
+.contacts__inner{
+    padding-bottom: 150px;
+}
+.contacts__title{
+    padding: 150px 0 120px;
+    text-align: left;
+    font-family: 'Halvar Breitschrift'; 
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #ACB0C3;
+
+}
+.contacts__form-group{
+    display: flex;
+    justify-content: start;
+}
+
+.contacts__form-input{
+    padding: 18px 0;
+    width: 430px;
+    background-color: #000000;    
+    border: none;
+    border-bottom: 2px solid #DADDEC;
+    margin-bottom: 105px;
+    color: #DADDEC;
+
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(218, 221, 236, 0.8);  
+    
+}
+.contacts__form-input + .contacts__form-input{
+    margin-left: 140px;
+}
+.contacts__form-input::placeholder{    
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px; 
+    color: rgba(218, 221, 236, 0.8);
+
+}
+
+.contacts__form-textarea{
+    padding: 15px 0;
+    width: 700px;
+    background-color: #000000;    
+    border: none;
+    border-bottom: 2px solid #DADDEC;
+    margin-bottom: 70px;
+    color: #DADDEC;
+
+    resize: none;
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+.contacts__form-textarea::placeholder{    
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px; 
+    color: rgba(218, 221, 236, 0.8);
+    margin-bottom: 0px;   
+}
+.contacts__text{
+    
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 119.7%;
+    color: rgba(172, 176, 195, 0.8);
+}
+.contacts__text-link{
+    color: #10B1CB;
+}
+.btn__circle-mb{
+    margin-bottom: 40px;
+}
+/******************************project*****************************/
+.project__title{
+    display: flex;
+   justify-content: space-between;
+   margin-bottom: 60px;
+}
+.project__title--color{
+    color: #0F0F0F;
+}
+
+.project__pubdate{
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: #10B1CB;
+}
+.projects__inner{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.projects__inner::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -20px;
+    right: 0;    
+    background-color: rgba(39, 39, 39, 0.8);
+}
+.projects__box{
+    position: relative;
+    width: 40%;
+    padding-right: 140px;
+}
+
+.projects__text{
+    font-family: 'Halvar Breitschrift';
+    font-style: italic;
+    font-size: 36px;
+    line-height: 42px;
+    color: #272727;
+    margin-bottom: 20px;
+}
+.projects__text::after{
+    position: absolute;
+    content: "\00A9";
+    top: -10px;
+    left: 210px;
+    color: #272727;
+    font-size: 18px;
+}
+.projects__descr{
+    font-family: 'Halvar-Breitschrift'; 
+    font-style: italic;    
+    font-size: 18px;
+    line-height: 118.22%; 
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+
+}
+.projects__link{
+    font-family: 'Halvar-Breitschrift'; 
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(16, 177, 203, 0.7);
+}
+
+.projects__images{
+    width: 60%;
+    height: auto;
+}
+
+.projects__img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/********************* Footer ****************************/
+
+.footer{
+    background-color: #10B1CB;
+    
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px 80px 110px;
+}
+.footer__contakts-item{
+    position: relative;
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FCFCFC;   
+    padding-bottom: 25px;
+}
+.footer__contakts-img{
+    position: absolute;
+    bottom: 24px;
+    left: -30px;
+}
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-item, 
+.footer__privacy-item,
+.footer__contakts-item{
+    list-style: none;   
+}
+
+.footer__social-img{
+    padding-right: 25px;
+}
+.footer__privacy-item{
+    padding-bottom: 25px;
+}
+.footer__privacy-link{
+    font-family: 'Halvar-Breitschrift';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FCFCFC;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+   
+}
+@media (max-width: 895px) {
+    
+}
+@media (max-width: 620px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
