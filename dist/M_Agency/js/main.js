@@ -1,11 +1,54 @@
 $(function(){
-    // $('.slider__box').slick({
-    //    // prevArrow: '<button type="button" class="slick-prev"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101 4.5H1V3.5H101V4.5Z" fill="white"/></svg></button>',
-    //     //nextArrow: '<button type="button" class="slick-next"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100.354 4.35355C100.549 4.15829 100.549 3.84171 100.354 3.64645L97.1716 0.464466C96.9763 0.269204 96.6597 0.269204 96.4645 0.464466C96.2692 0.659728 96.2692 0.976311 96.4645 1.17157L99.2929 4L96.4645 6.82843C96.2692 7.02369 96.2692 7.34027 96.4645 7.53553C96.6597 7.7308 96.9763 7.7308 97.1716 7.53553L100.354 4.35355ZM0 4.5H100V3.5H0L0 4.5Z" fill="white"/></svg></button>',
-    //     prevArrow: '<img class="slider__arrow slider__arrow-left" src="images/Arrow-left.svg" alt="arrow-left">',
-    //     nextArrow: '<img class="slider__arrow slider__arrow-right" src="images/Arrow-right.svg" alt="arrow-right">',
-    // });
-    // $('.menu__btn').on('click', function(){
-    //     $('.menu__list').toggleClass('active');
-    // });
+    
+
+    // $('#fullpage').fullpage({		
+	// 	autoScrolling: true,
+    //     scrollHorizontally: true,
+    //     sectionSelector: '.page-section',
+    //     scrollOverflow: true,
+    //     menu: '#header__nav',
+    //     anchors: ['proffer', 'about', 'projects'],
+	    
+	// });
+    //Smooth Scrolling Using Navigation Menu
+	$('a[href*="#"]').on('click', function(e){
+        $('html,body').animate({
+           scrollTop: $($(this).attr('href')).offset().top - 100
+       },500);
+        e.preventDefault();
+   });
+   $('.slider-inner').slick({    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button type="button" class="arrow-slick slick-prev"><svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.9673 14.1924L14.9422 1.37269C15.2613 1.05741 15.2613 0.551755 14.9422 0.236466C14.6231 -0.0788221 14.1113 -0.0788221 13.7922 0.236466L0.239328 13.6273C-0.0797759 13.9426 -0.0797759 14.4482 0.239328 14.7635L13.7922 28.1484C13.9487 28.3031 14.1595 28.3864 14.3642 28.3864C14.5689 28.3864 14.7796 28.309 14.9362 28.1484C15.2553 27.8331 15.2553 27.3275 14.9362 27.0122L1.9673 14.1924Z" fill="black"/></svg></button>',
+    nextArrow: '<button type="button" class="arrow-slick slick-next"><svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8936 13.632L2.33608 0.236548C2.01686 -0.0788495 1.50491 -0.0788495 1.1857 0.236548C0.866485 0.551946 0.866485 1.05777 1.1857 1.37317L14.1651 14.1974L1.1857 27.0216C0.866485 27.337 0.866485 27.8428 1.1857 28.1582C1.3423 28.3129 1.5531 28.3962 1.75788 28.3962C1.96266 28.3962 2.17346 28.3189 2.33005 28.1582L15.8876 14.7627C16.2068 14.4533 16.2068 13.9415 15.8936 13.632Z" fill="black"/></svg></button>',
+  });
+   
 });
+
+
+// 
+window.addEventListener("scroll", animateDuringScroll, false);
+
+function animateDuringScroll() {
+    document.querySelectorAll('.anim__circle-svg-1').forEach(e => {
+        e.style.webkitAnimationPlayState = 'running'; 
+    });
+
+    setTimeout(() => {
+      document.querySelectorAll('.line-animation0').forEach(e => {
+          e.style.webkitAnimationPlayState = 'running'; 
+      });
+    }, 100);
+
+        setTimeout(() => {
+      document.querySelectorAll('.anim__circle-svg-2').forEach(e => {
+          e.style.webkitAnimationPlayState = 'running'; 
+      });
+    }, 1900);
+}
