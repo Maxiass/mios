@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--   _________________________________________________________   -->
+    <!--                            FAVICON                            -->
+    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+
+    <!--   _________________________________________________________   -->
+    <!--                          REMIX ICONS                          -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+
+    <!--   _________________________________________________________   -->
+    <!--                              CSS                              -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!--   _________________________________________________________   -->
+    <!--                         GOOGLE FONTS                          -->
+    <!-- <link href="" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Online Shop</title>
+</head>
+<body>
+
+    <!--   _________________________________________________________   -->
+<!--                            HEADER                             -->
+<header class="header">
+    <div class="header__top-line top-line">
+        <div class="container">
+            <div class="top-line__inner">
+                <div class="top-line__user-location">
+                    <img class="top-line__user-location-img" src="images/user-location-icon.svg" alt="user-location">
+
+                    <p class="top-line__user-location-city">New York</p>
+                </div>
+
+                <div class="top-line__location-weather">
+                    <img class="top-line__location-weather-img" src="images/cloud-icon.svg" alt="user-location">
+
+                    <p class="top-line__location-weather-value">+15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   _________________________________________________________   -->
+    <!--                         HEADER TOP                            -->
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Stores
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Promo
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Shipping and payment
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__top-right-box">
+                    <a class="header__location">
+                        <p class="header__address">
+                            34 Mill St, Middletown, NY 10940, USA
+                        </p>
+                    </a>
+
+                    <ul class="user-list">
+                        <li class="user-list__item">
+                            <a class="user-list__link" href="#">
+                                <!-- <img class="user-list__img" src="images/heart-icon.svg" alt="like"> -->
+
+                                <svg class="user-list__img" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z" fill="#3a3a3a" opacity="1"/>
+                                    </svg>
+                            </a>
+                        </li>
+                        <li class="user-list__item">
+                            <a class="user-list__link" href="#">
+                                <!-- <img class="user-list__img" src="images/user-icon.svg" alt="user"> -->
+
+                                <svg class="user-list__img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.8225 18.096C17.3835 17.302 14.1825 16.606 15.7325 13.678C20.4525 4.766 16.9835 0 12.0005 0C6.91849 0 3.53649 4.949 8.26849 13.678C9.86549 16.623 6.54349 17.319 3.17849 18.096C0.105486 18.806 -0.00951398 20.332 0.000486018 23L0.00448602 24H23.9945L23.9985 23.031C24.0105 20.343 23.9065 18.809 20.8225 18.096Z" fill="#3a3a3a" opacity="1"/>
+                                    </svg>
+                                    
+                            </a>
+                        </li>
+                        <li class="user-list__item">
+                            <a class="user-list__link basket" href="#">
+                                <!-- <img class="user-list__img" src="images/basket-icon.svg" alt="basket"> -->
+
+                                <svg class="user-list__img" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z" fill="#3a3a3a" opacity="1"/>
+                                </svg>
+
+                                <p class="basket__num">1</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   _________________________________________________________   -->
+    <!--                        HEADER BOTTOM                          -->
+    <div class="header__bottom">
+        <div class="container">
+                <ul class="menu-categories">
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Electronics</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link active" href="#">Computer technology</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Furniture</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Car goods</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Construction</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Sport</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Household products</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">Children's</a>
+                    </li>
+
+                    <span class="menu-categories__underline"></span>
+                </ul>
+
+        </div>
+    </div>
+</header>
+
+    <!--   _________________________________________________________   -->
+    <!--                             MAIN                              -->
+    <main class="main">
+
+        <!--   _________________________________________________________   -->
+        <!--                        SEARCH CATALOG                         -->
+        <section class="search-catalog page-section">
+            <div class="container">
+                <div class="search-catalog__inner">
+                    <form class="search-catalog__form">
+                        <button class="search-catalog__open-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <!-- display: none -->
+                        <button class="search-catalog__close-btn"></button>
+
+                        <button class="search-catalog__catalog-btn" type="submit">CATALOG</button>
+
+                        <input class="search-catalog__input" type="text" placeholder="Search the catalog">
+                        <button class="search-catalog__btn" type="submit">
+                            <img src="images/search-icon.svg" alt="search" class="search-catalog__btn-img">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+            <!--   _________________________________________________________   -->
+            <!--                        BANNER SECTION                         -->
+            <section class="banner page-section">
+                <div class="container">
+                    <div class="banner__inner">
+                        <!-- <div class="banner__box"></div> -->
+                        <!--   _________________________________________________________   -->
+                        <!--                        BANNER SLIDER                          -->
+                        <div class="banner__slider">
+                            <a class="banner__slider-item" href="#">
+                                <img class="banner__slider-img" src="images/banner-slider-1.jpg" alt="image">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="banner__slider-img" src="images/banner-slider-1.jpg" alt="image">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="banner__slider-img" src="images/banner-slider-1.jpg" alt="image">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="banner__slider-img" src="images/banner-slider-1.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <!--   _________________________________________________________   -->
+                        <!--                          BANNER ITEMS                         -->
+                        <div class="banner__items sale__items">
+                            <a class="sale__item" href="#">
+                                <div class="sale__item-info">
+                                    Info title
+                                </div>
+
+                                <img class="sale__item-img" src="images/banner-item-img-1.jpg" alt="image">
+                            </a>
+                            <a class="sale__item" href="#">
+                                <div class="sale__item-info">
+                                    Info title
+                                </div>
+
+                                <img class="sale__item-img" src="images/banner-item-img-1.jpg" alt="image">
+                            </a>
+                            <a class="sale__item" href="#">
+                                <div class="sale__item-info">
+                                    Info title
+                                </div>
+
+                                <img class="sale__item-img" src="images/banner-item-img-1.jpg" alt="image">
+                            </a>
+                            <a class="sale__item" href="#">
+                                <div class="sale__item-info">
+                                    Info title
+                                </div>
+
+                                <img class="sale__item-img" src="images/banner-item-img-1.jpg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--   _________________________________________________________   -->
+            <!--                       SECTION BENEFITS                        -->
+            <div class="benefits page-section">
+                <div class="container">
+                    <div class="benefits__items">
+                        <div class="benefits__item">
+                            <img class="benefits__img" src="images/benefits-3.png" alt="image">
+                            <p class="benefits__info">
+                                Discounts and savings!
+                            </p>
+                        </div>
+                        <div class="benefits__item">
+                            <img class="benefits__img" src="images/benefits-2.png" alt="image">
+                            <p class="benefits__info">
+                                Fast Delivery Services
+                            </p>
+                        </div>
+                        <div class="benefits__item">
+                            <img class="benefits__img" src="images/benefits-3.png" alt="image">
+                            <p class="benefits__info">
+                                Discounts and savings!
+                            </p>
+                        </div>
+                        <div class="benefits__item">
+                            <img class="benefits__img" src="images/benefits-2.png" alt="image">
+                            <p class="benefits__info">
+                                Fast Delivery Services
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   _________________________________________________________   -->
+            <!--                        SECTION SEARCH                         -->
+            <section class="search page-section">
+                <div class="container">
+                    <div class="search__inner">
+                        <div class="search__tabs">
+                            <a class="search__tabs-item tab tab--active" href="#tab-1">Search by vendor code</a>
+                            <a class="search__tabs-item tab" href="#tab-2">Search by model</a>
+                            <a class="search__tabs-item tab" href="#tab-3">Search by product name</a>
+                        </div>
+
+                        <div class="search__content">
+                            <div id="tab-1" class="search__content-item tabs-content tabs-content--active">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text" placeholder="Input vendor code">
+                                    <button class="search__content-btn" type="submit">Search</button>
+                                </form>
+                            </div>
+
+                            <div id="tab-2" class="search__content-item tabs-content">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text" placeholder="Input model">
+                                    <button class="search__content-btn" type="submit">Search</button>
+                                </form>
+                            </div>
+
+                            <div id="tab-3" class="search__content-item tabs-content">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text" placeholder="Input product name">
+                                    <button class="search__content-btn" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--   _________________________________________________________   -->
+            <!--                      SECTION CATEGORIES                       -->
+            <div class="categories page-section">
+                <div class="container">
+                    <div class="categories__items">
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <img class="categories__img" src="images/categories-1.png" alt="image">
+                            <div class="categories__descr">Title info</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   _________________________________________________________   -->
+            <!--                   SECTION ABOUT COMPANY                       -->
+            <section class="about-company">
+                <div class="container">
+                    <div class="about-company__inner">
+                        <div class="about-company__content">
+                            <div class="about-company__title">
+                                ABOUT COMPANY
+                            </div>
+
+                            <div class="about-company__info">
+                                <p class="about-company__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                                </p>
+                                <p class="about-company__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <p class="about-company__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                </p>
+
+                                <a class="about-company__link" href="#">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <img class="about-company__img" src="images/content/about-company.jpg" alt="image">
+                    </div>
+                </div>
+            </section>
+
+            <!--   _________________________________________________________   -->
+            <!--                   SECTION POPULAR PRODUCTS                    -->
+            <section class="products page-section">
+                <div class="container">
+                    <div class="products__inner">
+                        <h3 class="products__title">
+                            Popular products
+                        </h3>
+
+                        <div class="tabs-wrapper">
+                            <div class="products__tabs tabs">
+                                <a class="products__tab tab tab--active" href="#popular-product-tab-1">Computer technology</a>
+                                <a class="products__tab tab" href="#popular-product-tab-2">Furniture</a>
+                                <a class="products__tab tab" href="#popular-product-tab-3">Sport</a>
+                                <a class="products__tab tab" href="#popular-product-tab-4">Electronics</a>
+                                <a class="products__tab tab" href="#popular-product-tab-5">Instruments</a>
+                                <a class="products__tab tab" href="#popular-product-tab-6">Accessories</a>
+                            </div>
+                            <div class="products__container tabs-container">
+                                <div class="products__content tabs-content tabs-content--active" id="popular-product-tab-1">
+                                    <div class="product-slider">
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__content tabs-content" id="popular-product-tab-2">
+                                    <div class="product-slider">
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__content tabs-content" id="popular-product-tab-3">Slider 3</div>
+                                <div class="products__content tabs-content" id="popular-product-tab-4">Slider 4</div>
+                                <div class="products__content tabs-content" id="popular-product-tab-5">Slider 5</div>
+                                <div class="products__content tabs-content" id="popular-product-tab-6">Slider 6</div>
+                            </div>
+                        </div>
+
+                        <div class="products__more">
+                            <a class="products__more-link" href="#">More products</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--   _________________________________________________________   -->
+            <!--                      SECTION NEWS BANNER                      -->
+            <section class="news-banner">
+                <div class="container">
+                    <div class="news-banner__inner">
+                        <div class="news-banner__title">News</div>
+
+                        <div class="news-banner__items">
+                            <a class="news-banner__item-link" href="#">
+                                <img class="news-banner__img" src="images/content/news-banner-1.png" alt="image">
+                                <div class="news-banner__text-box">
+                                    <div class="news-banner__descr">News info</div>
+                                    <div class="news-banner__info">Info</div>
+                                </div>
+                            </a>
+                            <a class="news-banner__item-link" href="#">
+                                <img class="news-banner__img" src="images/content/news-banner-1.png" alt="image">
+                                <div class="news-banner__text-box">
+                                    <div class="news-banner__descr">News info</div>
+                                    <div class="news-banner__info">Info</div>
+                                </div>
+                            </a>
+                            <a class="news-banner__item-link" href="#">
+                                <img class="news-banner__img" src="images/content/news-banner-1.png" alt="image">
+                                <div class="news-banner__text-box">
+                                    <div class="news-banner__descr">News info</div>
+                                    <div class="news-banner__info">Info</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--   _________________________________________________________   -->
+            <!--               SECTION BUY WITH THIS PRODUCT                   -->
+            <section class="products page-section">
+                <div class="container">
+                    <div class="products__inner">
+                        <h3 class="products__title">
+                            Specials
+                        </h3>
+
+                        <div class="tabs-wrapper">
+                            <div class="products__tabs tabs">
+                                <a class="products__tab tab tab--active" href="#specials-product-tab-1">Computer technology</a>
+                                <a class="products__tab tab" href="#specials-product-tab-2">Furniture</a>
+                                <a class="products__tab tab" href="#specials-product-tab-3">Sports</a>
+                                <a class="products__tab tab" href="#specials-product-tab-4">Electronics</a>
+                                <a class="products__tab tab" href="#specials-product-tab-5">Instruments</a>
+                                <a class="products__tab tab" href="#specials-product-tab-6">Accessories</a>
+                            </div>
+                            <div class="products__container tabs-container">
+                                <div class="products__content tabs-content tabs-content--active" id="specials-product-tab-1">
+                                    <div class="product-slider">
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__content tabs-content" id="specials-product-tab-2">
+                                    <div class="product-slider">
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available product-item__watch-video">
+                                                <button class="product-item__favorite"></button>
+                                                <button class="product-item__video">
+                                                    <img src="images/watch-video-2.png" alt="video">
+                                                </button>
+
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <img class="product-item__img" src="images/content/product-1.png" alt="image">
+                                                    <h4 class="product-item__title">Product name</h4>
+                                                    <p class="product-item__price">3 790 $</p>
+
+                                                    <p class="product-item__notify-text">not available</p>
+                                                    <a class="product-item__notify-link" href="#">Inform about admission</a>
+                                                </a>
+
+                                                <button class="product-item__basket">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__content tabs-content" id="specials-product-tab-3">Slider 3</div>
+                                <div class="products__content tabs-content" id="specials-product-tab-4">Slider 4</div>
+                                <div class="products__content tabs-content" id="specials-product-tab-5">Slider 5</div>
+                                <div class="products__content tabs-content" id="specials-product-tab-6">Slider 6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--   _________________________________________________________   -->
+            <!--                     SECTION FORM-MAIL                         -->
+            <section class="subscribe-mail">
+                <div class="subscribe-mail__box">
+                    <div class="subscribe-mail__title">Subscribe and buy more profitable!</div>
+
+                    <form class="subscribe-mail__form">
+                        <input type="text" class="subscribe-mail__input" placeholder="Your E-mail">
+                        <button class="subscribe-mail__btn">Subscribe</button>
+                    </form>
+                </div>
+            </sectio>
+
+
+    </main>
+
+    <!--   _________________________________________________________   -->
+<!--                           FOOTER                              -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__items">
+            <div class="footer__item">
+                <div class="footer__item-top">
+                    <img class="footer__item-logo" src="images/logo.png" alt="logo">
+                </div>
+
+                <div class="footer__item-bottom">
+                    <div class="footer__item-bottom-title">
+                        Information
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Payment
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Guarantee
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Promo
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Reviews
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                News
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Policy
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Service centres
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__item-top">
+                    <div class="footer__item-top-title">
+                        We are accept to payment:
+                    </div>
+                    <img class="footer__item-img" src="images/visa-master.png" alt="image">
+                </div>
+
+                <div class="footer__item-bottom">
+                    <div class="footer__item-bottom-title">
+                        Categories
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                ATVs
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Pleasure boats
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Jet skis
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Boats
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                All-terrain vehicles
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Snowmobiles
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Engines
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Spares
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__item-top">
+                    <div class="footer__item-top-title">
+                        We are accept to payment:
+                    </div>
+                    <img class="footer__item-img" src="images/visa-master.png" alt="image">
+                </div>
+
+                <div class="footer__item-bottom">
+                    <div class="footer__item-bottom-title">
+                        Services
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Delivery
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Repair
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Design project
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                Delivery
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">
+                                More
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__item-top">
+                    <div class="footer__basket">
+                        <a class="footer__basket-link basket" href="#">
+                            <svg class="user-list__img" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z" fill="#3a3a3a" opacity="1"/>
+                            </svg>
+    
+                            <p class="basket__num">1</p>
+                        </a>
+    
+                        <div class="footer__basket-title">
+                            Basket
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__item-bottom">
+                    <div class="footer__item-bottom-title">
+                        Contacts
+                    </div>
+                
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-phone" href="tel:12345678910">
+                                +12345678910
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-phone" href="tel:12345678910">
+                                +12345678910
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-phone" href="tel:12345678910">
+                                +12345678910
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-mail" href="mailto:mail@gmail.com">
+                                mail@gmail.com
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-address" href="#">
+                                34 Mill St, Middletown, NY 10940, USA
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__item-top">
+                </div>
+                
+                <div class="footer__item-bottom">
+                    <ul class="footer__menu-feed-back">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__menu--request" href="#">
+                                Request a call
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__menu--message" href="#">
+                                Write a message
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__menu--question" href="#">
+                                Ask a Question
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <div class="footer__social-title">Join to us:</div>
+
+                        <div class="footer__social-btns">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="images/instagram-icon.svg" alt="image">
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="images/vk-icon.svg" alt="image">
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="images/youtube-icon.svg" alt="image">
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="images/facebook-icon.svg" alt="image">
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="images/telegram-icon.svg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+            
+    </div>
+</footer>
+
+    <!--   _________________________________________________________   -->
+    <!--                          SCROLL UP                            -->
+    <!-- <a href="#id" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a> -->
+
+    <!--   _________________________________________________________   -->
+    <!--                         SCROLL REVEAL                         -->
+    <!-- <script src="js/scrollreveal.min.js"></script> -->
+
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>
